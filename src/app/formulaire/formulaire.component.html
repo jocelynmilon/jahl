@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <div class="formu">
+    <form [formGroup]="reservationForm">
+      <div class="form-group">
+        <label for="arrive" class="arrive">Arrivé</label>
+        <br>
+        <input type="date" formControlName="arrive" id="arrive">
+      </div>
+      <div class="form-group">
+        <label for="depart" class="arrive" class="depart">Départ</label>
+        <br>
+        <input type="date" formControlName="depart" id="depart">
+      </div>
+      <div class="form-group">
+        <label for="propriete" class="propriete">Propriete</label>
+        <br>
+        <select formControlName="propriete" id="">
+          <option *ngFor="let po of propriete">{{ po }}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="personne" class="personne">Personne</label>
+        <br>
+        <select name="" formControlName="peopleOptions" id="personne">
+          <option *ngFor="let pos of peopleOptions">{{pos}}</option>
+        </select>
+      </div>
+      <label for="" class="synthe">{{reservationForm.value | json}} </label>
+    </form>
+  </div>
+</div>

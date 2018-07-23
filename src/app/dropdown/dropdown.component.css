@@ -1,0 +1,28 @@
+.entete {
+    width: 70%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.555);
+    float: right;
+}
+.logo {
+    width: 30%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.555);
+    float: left;   
+}
+.btn-outline-success {
+    color: #f8f9fa;
+    background-color: rgb(113, 113, 113);
+    background-image: none;
+    border-color: transparent;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.btn-outline-primary {
+    color: #f8f9fa;
+    background-color: rgb(113, 113, 113);
+    background-image: none;
+    border-color: transparent;
+    font-size: 20px;
+    margin-top:5px;
+}

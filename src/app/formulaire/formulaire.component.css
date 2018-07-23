@@ -1,0 +1,60 @@
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f1f1f1;
+}
+
+.formu {
+    width: 80%;
+    height: 100px;
+    background-color: gray;
+    margin: 0 auto;
+}
+.form-group {
+    margin-bottom: 1rem;
+    display: inline-block;
+    margin-left: 100px;
+    padding-left: 100px;
+}
+.arrive[_ngcontent-c4] {
+    background-color: #00000078;
+    color: #fff;
+    font-size: 17px;
+    width: 172px;
+    text-align: center;
+    border-radius: 19px;
+}
+.depart[_ngcontent-c4] {
+    background-color: #00000078;
+    color: #fff;
+    font-size: 17px;
+    width: 172px;
+    text-align: center;
+    border-radius: 19px;
+}
+.propriete[_ngcontent-c4] {
+    background-color: #00000078;
+    color: #fff;
+    font-size: 17px;
+    width: 172px;
+    text-align: center;
+    border-radius: 19px;
+}
+.personne[_ngcontent-c4] {
+    background-color: #00000078;
+    color: #fff;
+    font-size: 17px;
+    width: 172px;
+    text-align: center;
+    border-radius: 19px;
+}
+input, button, select, optgroup, textarea {
+    margin: 0 !important;
+    font-family: inherit !important ;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    width: 167px !important;
+}

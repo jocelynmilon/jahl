@@ -1,0 +1,13 @@
+.container-fluid {
+    background-color: rgb(113, 113, 113, 0.15);
+    margin: 0 auto;
+}
+.row[_ngcontent-c5] {
+    width: 80%;
+    margin: 0 auto;
+    background-color: gray;
+}
+.card[_ngcontent-c5] {
+    margin-left: 12rem;
+    margin-top: 6rem;
+}
