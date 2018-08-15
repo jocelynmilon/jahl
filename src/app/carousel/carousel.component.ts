@@ -8,20 +8,10 @@ import {map} from 'rxjs/operators';
   styleUrls: ['./carousel.component.css']
 })
 export class CarouselComponent implements OnInit {
-  images: Array<string>;
+  images: any=['/assets/im2.jpg', '/assets/im3.jpg', '/assets/im7.jpg', 'assets/im8.jpg',  'assets/im5.jpg'];
 
-  constructor(private _http: HttpClient ) { }
+  constructor() { }
 
-  ngOnInit() {
-
-    this._http.get('https://picsum.photos/list')
-    .pipe(map((images: Array<{id: number}>) => this._randomImageUrls(images)))
-    .subscribe(images => this.images = images); 
+  ngOnInit() { }
+  
   }
-  private _randomImageUrls(images: Array<{id: number}>): Array<string> {
-    return [1, 2, 3].map(() => {
-      const randomId = images[Math.floor(Math.random() * images.length)].id;
-      return `https://picsum.photos/1920/800?image=${randomId}`;
-    });
-  }
-}
