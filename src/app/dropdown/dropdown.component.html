@@ -1,24 +1,35 @@
 <div class="entete">
-  <div class="row">
-    <div class="col text-right">
-      <button type="button" class="btn btn-outline-success">Home</button>
-      <button type="button" class="btn btn-outline-success">Location</button>
-      <button type="button" class="btn btn-outline-success">Concierge</button>
-      <button type="button" class="btn btn-outline-success">Contact</button>
-      <div ngbDropdown class="d-inline-block">
-        <button class="btn btn-outline-primary" id="dropdownBasic2" ngbDropdownToggle>Activités</button>
-        <div ngbDropdownMenu aria-labelledby="dropdownBasic2">
-          <button class="dropdown-item">Action - 1</button>
-          <button class="dropdown-item">Another Action</button>
-          <button class="dropdown-item">Something else is here</button>
-        </div>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">JAHL Harmony</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/location">Location</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/conciergerie">Concierge</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/activite">Activité</a>
+        </li>
+      </form>
     </div>
 
+  </nav>
+  <router-outlet></router-outlet>
+ </div>
 
 
-  </div>
-</div>
-<div class="logo">
 
-</div>

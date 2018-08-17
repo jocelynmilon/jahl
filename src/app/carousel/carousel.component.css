@@ -2,3 +2,39 @@
     width: 100%;
     margin: 0 auto;
 }
+.trouge {
+    font-family: fantasy;
+    color: red;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.strouge {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 700;  
+}
+.tblanc {
+    font-family: fantasy;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bolder;  
+}
+.stblanc {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;  
+}
+.tblack {
+    font-family: fantasy;
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;  
+}
+.stblack {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;  
+}

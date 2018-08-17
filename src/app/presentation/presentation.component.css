@@ -1,0 +1,38 @@
+#prem {
+    width: 33%;
+    background-color: #fff;
+    float: left;
+}
+.entete{
+    margin: 0 auto;
+    width: 100%;
+}
+#seconde {
+    width: 33%;
+    background-color:#fff;
+    float: left;   
+}
+#trois {
+    width: 33%;
+    background-color: #fff;
+    float:right;
+}
+.description {
+    width: 80%;
+}
+.titre{
+    text-align: center;
+    color: red;
+}
+.stitre{
+    text-align: center;
+    color: blue;
+    font-family: fantasy;
+    font-weight: 500;
+}
+.paragraphe{
+    margin-left: 10px;
+    text-align: justify;
+    color: rgb(4, 0, 255);
+    font-size: 0.80rem;
+}
