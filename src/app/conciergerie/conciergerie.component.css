@@ -1,0 +1,35 @@
+.card {
+    margin-top: 50px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+.presentation {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: fantasy;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+    text-transform: uppercase
+} 
+.para {
+    font-size: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    color: blue;
+}
+.card-title {
+   font-size: 1.2rem;
+   color: red;
+   font-family: fantasy;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center; 
+}
+.card-text {
+    font-size: 1rem;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+} 

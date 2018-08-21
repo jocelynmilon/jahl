@@ -10,7 +10,7 @@ export class FormulaireComponent implements OnInit {
 
   reservationForm: FormGroup;
   arrive = new Date();
-  propriete = ['Los Angeles', 'New york', 'Guadeloupe', 'Martinique', 'France'];
+  propriete = ['Los Angeles', 'Guadeloupe', 'Martinique', 'France'];
   peopleOptions = [1, 2, 3, 4, 5, 6, 7, 8];
   depart = new Date();
   constructor(private fb: FormBuilder) { }

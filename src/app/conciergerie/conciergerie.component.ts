@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./conciergerie.component.css']
 })
 export class ConciergerieComponent implements OnInit {
-
+image: any = ['/assets/laverie.jpg', '/assets/pizzaria.jpg', '/assets/bar.jpg', '/assets/resto.jpg',
+ '/assets/locacar.jpg', '/assets/taxi.jpg'];
   constructor() { }
 
   ngOnInit() {

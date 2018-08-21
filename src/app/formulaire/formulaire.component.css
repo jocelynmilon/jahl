@@ -1,60 +1,91 @@
-.container-fluid {
-    width: 100%;
-   /* padding-right: 15px;
-    padding-left: 15px;
-   margin-right: auto;
-    margin-left: auto;*/
-    background-color: #f1f1f1;
-}
+@media only screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    .container-fluid {
+        width: 100%;
+       /* padding-right: 15px;
+        padding-left: 15px;
+       margin-right: auto;
+        margin-left: auto;*/
+        background-color: #f1f1f1;
+    }
+    
+    .formu[_ngcontent-c5] {
+        width: 100%;
+        height: 150px;
+        background-color: #1b8bdf7d;
+        margin: 0 auto;
+    }
+    .form-group {
+        margin-bottom: 1rem;
+        display: inline-block;
+        margin-left: 100px;
+        padding-left: 100px;
+    }
+    .arrive[_ngcontent-c4] {
+        background-color: #00000078;
+        color: #fff;
+        font-size: 17px;
+        width: 172px;
+        text-align: center;
+        border-radius: 19px;
+    }
+    .depart[_ngcontent-c4] {
+        background-color: #00000078;
+        color: #fff;
+        font-size: 17px;
+        width: 172px;
+        text-align: center;
+        border-radius: 19px;
+    }
+    .propriete[_ngcontent-c4] {
+        background-color: #00000078;
+        color: #fff;
+        font-size: 17px;
+        width: 172px;
+        text-align: center;
+        border-radius: 19px;
+    }
+    .personne[_ngcontent-c4] {
+        background-color: #00000078;
+        color: #fff;
+        font-size: 17px;
+        width: 172px;
+        text-align: center;
+        border-radius: 19px;
+    }
+    input[_ngcontent-c5], button[_ngcontent-c5], select[_ngcontent-c5], optgroup[_ngcontent-c5], textarea[_ngcontent-c5] {
+        margin: 0 !important;
+        font-family: inherit !important;
+        font-size: inherit !important;
+        line-height: inherit !important;
+        width: 223px !important;
+        height: 50px;
+        border-radius: 7px;
+        border: solid;
+    }
 
-.formu {
-    width: 100%;
-    height: 100px;
-    background-color: gray;
-    margin: 0 auto;
-}
-.form-group {
-    margin-bottom: 1rem;
-    display: inline-block;
-    margin-left: 100px;
-    padding-left: 100px;
-}
-.arrive[_ngcontent-c4] {
-    background-color: #00000078;
-    color: #fff;
-    font-size: 17px;
-    width: 172px;
-    text-align: center;
-    border-radius: 19px;
-}
-.depart[_ngcontent-c4] {
-    background-color: #00000078;
-    color: #fff;
-    font-size: 17px;
-    width: 172px;
-    text-align: center;
-    border-radius: 19px;
-}
-.propriete[_ngcontent-c4] {
-    background-color: #00000078;
-    color: #fff;
-    font-size: 17px;
-    width: 172px;
-    text-align: center;
-    border-radius: 19px;
-}
-.personne[_ngcontent-c4] {
-    background-color: #00000078;
-    color: #fff;
-    font-size: 17px;
-    width: 172px;
-    text-align: center;
-    border-radius: 19px;
-}
-input, button, select, optgroup, textarea {
-    margin: 0 !important;
-    font-family: inherit !important ;
-    font-size: inherit !important;
-    line-height: inherit !important;
-    width: 167px !important;
-}
+    }
+    @media only screen and (max-width: 767px) {
+        .container-fluid {
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        .formu[_ngcontent-c5] {
+            width: 100%;
+            height: 363px;
+            background-color: #1b8bdf7d;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+            margin-left: 16rem;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 0.5rem;
+            color: #fff;
+            font-weight: 700;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        }

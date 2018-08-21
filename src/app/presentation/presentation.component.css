@@ -1,4 +1,4 @@
-#prem {
+#prem[_ngcontent-c7] {
     width: 33%;
     background-color: #fff;
     float: left;
@@ -12,10 +12,10 @@
     background-color:#fff;
     float: left;   
 }
-#trois {
+#trois[_ngcontent-c7] {
     width: 33%;
     background-color: #fff;
-    float:right;
+    float: right;
 }
 .description {
     width: 80%;

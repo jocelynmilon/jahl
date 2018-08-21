@@ -1,14 +1,44 @@
-.card-title {
-    font-family: fantasy;
-    color: red;
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-align: center;
-}
-.card-text {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    color: blue;
-    font-size: 1rem;
-    text-align: justify;
-   
-}
+@media only screen and (min-width: 768px) {
+    /* tablettes et ordinateurs */
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        background: #f1fafe59;
+    }
+    .card-title {
+        font-family: fantasy;
+        color: red;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+    .card-text {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        color: blue;
+        font-size: 1rem;
+        text-align: justify;
+       
+    }
+    }
+    @media only screen and (max-width: 767px) {
+        /* smartphone */
+        container-fluid[_ngcontent-c8] {
+            width: 100%;
+           
+        }
+        .row[_ngcontent-c8] {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px; 
+            margin-left: -15px; 
+        }
+        .card[_ngcontent-c8]{
+            width: 45rem !important;
+        }
+        }
