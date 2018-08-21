@@ -1,0 +1,11 @@
+@media screen and (min-width:1200px ) {
+   .card[_ngcontent-c3] {
+       width: 35rem  !important;
+   }
+   .deux[_ngcontent-c3] {
+       width: 41rem !important;
+   }
+   .trois[_ngcontent-c3] {
+       width: 25rem !important;
+   }
+}
