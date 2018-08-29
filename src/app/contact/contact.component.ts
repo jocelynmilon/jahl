@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   registerForm: FormGroup;
-  submitted: false;
+  submitted: true;
 
   constructor(private formBuilder: FormBuilder) { }
 
