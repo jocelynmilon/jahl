@@ -1,23 +1,44 @@
 <div class="container">
   <h1 class="titre">Nous Contacter</h1>
-<form>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="exampleFormControlInput3" class="stitre">Nom</label>
+        <input type="text" formControlName="nom" class="form-control" id="exampleFormControlInput3" [ngClass]="{ 'is-invalid': submitted && f.nom.errors }" placeholder="nom">
+        <div *ngIf="submitted && f.nom.errors" class="invalid-feedback">
+            <div *ngIf="f.nom.errors.required">le nom est requis</div>
+        </div>
+      </div>
+    <div class="form-group">
+        <label for="exampleFormControlInput2" class="stitre">Prénom</label>
+        <input type="text" formControlName="prenom" class="form-control" id="exampleFormControlInput2" [ngClass]="{ 'is-invalid': submitted && f.prenom.errors }" placeholder="prénom">
+        <div *ngIf="submitted && f.prenom.errors" class="invalid-feedback">
+            <div *ngIf="f.prenom.errors.required">le prénom est requis</div>
+        </div>
+      </div>
   <div class="form-group">
     <label for="exampleFormControlInput1" class="stitre">Adresse Email</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@exemple.com">
+    <input type="email" formControlName="email" class="form-control" id="exampleFormControlInput1" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" placeholder="nom@exemple.com">
+    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required">Email is required</div>
+        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+    </div>
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1"  class="stitre">Selectioner destination</label>
-    <select class="form-control" id="exampleFormControlSelect1">
+    <select class="form-control" formControlName="destination" id="exampleFormControlSelect1" [ngClass]="{ 'is-invalid': submitted && f.destination.errors }">
       <option>Paris</option>
       <option>Guadeloupe</option>
       <option>Martinique</option>
       <option>Los Angeles</option>
      
     </select>
+    <div *ngIf="submitted && f.destination.errors" class="invalid-feedback">
+        <div *ngIf="f.destination.errors.required">la destination est requise</div>
+    </div>
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect2"  class="stitre" >Nombre de Personne</label>
-    <select multiple class="form-control" id="exampleFormControlSelect2">
+    <select multiple class="form-control" id="exampleFormControlSelect2" formControlName="nombre" [ngClass]="{ 'is-invalid': submitted && f.nombre.errors }" >
       <option>1</option>
       <option>2</option>
       <option>3</option>
@@ -29,11 +50,17 @@
       <option>9</option>
       <option>10</option>
     </select>
+    <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+        <div *ngIf="f.nombre.errors.required">le nombre est requis</div>
+    </div>
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1"  class="stitre" >Ce que vous souhaitez</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
+  <div class="form-group">
+  <button [disabled]="loading" class="btn-lg btn-primary">Envoyer</button>
+</div>
 </form>
-<button class="btn-lg btn-primary">Envoyer</button>
+
 </div>

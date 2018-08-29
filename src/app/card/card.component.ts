@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
-//let $: any;
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -16,13 +16,25 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // $(document).ready(function () {
-    //  $('.card').on('mouseover', function () {
-    //  $(this).css({
-    //   backgroundColor: '#d40d12',
-    //   width: '15rem'
-    //   });
-    //  });
-    // });
+    $(document).ready(function () {
+      $('.card.pres').on('mouseover', function () {
+        $(this).animate({
+          opacity: '0.5',
+
+          height: '34rem',
+          width: '60rem'
+
+        });
+      });
+      $('.card.pres').on('mouseleave', function () {
+        $(this).animate({
+          opacity: '1',
+
+          height: '30rem',
+          width: '50rem'
+        });
+      });
+
+    });
   }
 }

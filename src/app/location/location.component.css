@@ -1,0 +1,46 @@
+.btn-primary[_ngcontent-c3] {
+    color: #fff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+    width: 15rem;
+    height: 3rem;
+}
+.icon[_ngcontent-c3] {
+    width: 6rem;
+}
+.card-title {
+    color:orangered;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.titre {
+    color:orangered;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;   
+}
+
+.modal-content[_ngcontent-c3] {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    width: 62rem;
+}
+p.card-text[_ngcontent-c3] {
+    font-size: 1rem;
+    color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}

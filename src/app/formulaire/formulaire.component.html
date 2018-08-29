@@ -24,6 +24,10 @@
           <option *ngFor="let pos of peopleOptions">{{pos}}</option>
         </select>
       </div>
-      <label for="" class="synthe">{{reservationForm.value | json}} </label>
+      <div class="synt"> 
+        <label for="" class="synthe">{{reservationForm.value | json}} </label>
+        <button class="btn-primary btn-lg" >Envoyer</button>
+      </div>
+     
     </form>
   </div>

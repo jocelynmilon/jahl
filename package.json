@@ -22,9 +22,12 @@
     "@angular/router": "^6.0.3",
     "@ng-bootstrap/ng-bootstrap": "^2.0.0-alpha.0",
     "@ng-bootstrap/schematics": "^2.0.0-alpha.1",
+    "angular-popper": "^2.0.0",
     "bootstrap": "^4.0.0",
     "core-js": "^2.5.4",
+    "eslint": "^5.4.0",
     "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
     "rxjs": "^6.0.0",
     "save": "^2.3.2",
     "zone.js": "^0.8.26"
