@@ -14,8 +14,9 @@ $('.popover-dismiss').popover({
   styleUrls: ['./location.component.css']
 })
 export class LocationComponent implements OnInit {
-
-  titre: any = ['Appartement', 'Villa', 'Maison', ];
+  width: any;
+  height: any;
+  titre: any = ['Appartement', 'Villa', 'Maison',];
   image: any = ['/assets/appartement/appart.jpg', '/assets/appartement/appart2.jpg', '/assets/appartement/appart3.jpg',
     '/assets/appartement/appart4.jpg', '/assets/appartement/appart5.jpg', '/assets/appartement/appart6.jpg'];
   image2: any = ['/assets/maison/maison.jpg', '/assets/maison/maison2.jpg', '/assets/maison/maison3.jpg'];
@@ -28,7 +29,34 @@ export class LocationComponent implements OnInit {
 
 
 
-  ngOnInit() { }
+  ngOnInit() {
+    $(document).ready(function () {
+      const img = $('.img-thumbnail'), large = $('#large');
+
+      $(img).each(function () {
+        $(this).on('click', function (e) {
+          e.preventDefault();
+          const src = $(this).attr('src');
+          $(large).attr('src', src);
+          $(large).parent().attr('href', src);
+        });
+      });
+    });
+    $(document).ready(function () {
+      $('.card.loc').on('mouseover', function () {
+        $(this).animate({
+          opacity: '0.5',
+        });
+      });
+      $('.card.loc').on('mouseleave', function () {
+        $(this).animate({
+          opacity: '1',
+        });
+      });
+
+    });
+
+  }
 
 
 }

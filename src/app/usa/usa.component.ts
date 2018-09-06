@@ -12,6 +12,19 @@ image3: any = '/assets/venice.jpg';
   constructor() { }
 
   ngOnInit() {
+    $(document).ready(function () {
+      $('.card').on('mouseover', function () {
+        $(this).animate({
+          opacity: '0.5',
+        });
+      });
+      $('.card').on('mouseleave', function () {
+        $(this).animate({
+          opacity: '1',
+        });
+      });
+
+    });
   }
 
 }

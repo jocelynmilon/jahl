@@ -4,11 +4,15 @@
   <br>
   <div class="row">
     <div class="col-lg-4">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top" [src]="image[0] " alt="Card image cap">
+      <div class="card loc" style="width: 18rem;">
+        <div>
+        <a href="/assets/appartement/appart.jpg"><img class="card-img-top" [src]="image[0]"  alt="Card image cap"></a>
+      </div>
+        
+       
         <div class="card-body">
           <h5 class="card-title">{{ titre[0] }}</h5>
-          <img class="icon" [src]="iconne[4]" alt="">
+          <img class="icon" style="width: 6rem;" [src]="iconne[4]" alt="">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
           <!-- Button trigger modal -->
@@ -27,11 +31,18 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                 <img [src]="image[0]" alt="">
+                <a href="/assets/appartement/appart.jpg" target="-blank"> <img [src]="image[0]" id="large" alt=""></a>
+                 <br>
+                 <img  class="img-thumbnail" [src]="image[0]" width="140" height="140" alt="">
+                 <img  class="img-thumbnail" [src]="image[1]" width="140" height="140" alt="">
+                 <img  class="img-thumbnail" [src]="image[2]" width="140" height="140" alt="">
+                 <img  class="img-thumbnail" [src]="image[0]" width="140" height="140" alt="">
+                 <img  class="img-thumbnail" [src]="image[1]" width="140" height="140" alt="">
+                 <img  class="img-thumbnail" [src]="image[2]" width="140" height="140" alt="">
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Réservation</button>
                 </div>
               </div>
             </div>
@@ -41,11 +52,11 @@
       </div>
     </div>
     <div class="col-lg-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card loc" style="width: 18rem;">
         <img class="card-img-top" [src]="image[1]" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ titre[0] }}</h5>
-          <img class="icon" [src]="iconne[2]" alt="">
+          <img class="icon" style="width: 6rem;" [src]="iconne[2]" alt="">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -67,7 +78,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Réservation</button>
                 </div>
               </div>
             </div>
@@ -76,11 +87,11 @@
       </div>
     </div>
     <div class="col-lg-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card loc" style="width: 18rem;">
         <img class="card-img-top" [src]="image[2]" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ titre[0] }}</h5>
-          <img class="icon" [src]="iconne[3]" alt="">
+          <img class="icon" style="width: 6rem;" [src]="iconne[3]" alt="">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -102,7 +113,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Réservation</button>
                 </div>
               </div>
             </div>
@@ -113,11 +124,11 @@
   </div>
   <div class="row">
     <div class="col-lg-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card loc" style="width: 18rem;">
         <img class="card-img-top" [src]="image3[0]" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ titre[1] }}</h5>
-          <img class="icon" [src]="iconne[4]" alt="">
+          <img class="icon" style="width: 6rem;" [src]="iconne[4]" alt="">
           <p class="card-text">aaaaa</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -139,7 +150,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Réservation</button>
                 </div>
               </div>
             </div>
@@ -148,11 +159,11 @@
       </div>
     </div>
     <div class="col-lg-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card loc" style="width: 18rem;">
         <img class="card-img-top" [src]="image3[1]" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ titre[1] }}</h5>
-          <img class="icon" [src]="iconne[4]" alt="">
+          <img class="icon" style="width: 6rem;" [src]="iconne[4]" alt="">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -174,7 +185,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Réservation</button>
                 </div>
               </div>
             </div>
@@ -183,11 +194,11 @@
       </div>
     </div>
     <div class="col-lg-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card loc" style="width: 18rem;">
         <img class="card-img-top" [src]="image3[2]" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ titre[1] }}</h5>
-          <img class="icon" [src]="iconne[4]" alt="">
+          <img class="icon" style="width: 6rem;" [src]="iconne[4]" alt="">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -209,7 +220,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Réservation</button>
                 </div>
               </div>
             </div>
@@ -220,11 +231,11 @@
   </div>
   <div class="row">
     <div class="col-lg-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card loc" style="width: 18rem;">
         <img class="card-img-top" [src]="image2[0]" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ titre[2] }}</h5>
-          <img class="icon" [src]="iconne[4]" alt="">
+          <img class="icon" style="width: 6rem;" [src]="iconne[4]" alt="">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -246,7 +257,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Réservation</button>
                 </div>
               </div>
             </div>
@@ -255,11 +266,11 @@
       </div>
     </div>
     <div class="col-lg-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card loc" style="width: 18rem;">
         <img class="card-img-top" [src]="image2[1]" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ titre[2] }}</h5>
-          <img class="icon" [src]="iconne[4]" alt="">
+          <img class="icon" style="width: 6rem;" [src]="iconne[4]" alt="">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -281,7 +292,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Réservation</button>
                 </div>
               </div>
             </div>
@@ -290,15 +301,15 @@
       </div>
     </div>
     <div class="col-lg-4">
-      <div class="card" style="width: 18rem;">
+      <div class="card loc" style="width: 18rem;">
         <img class="card-img-top" [src]="image2[2]" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">{{ titre[2] }}</h5>
-          <img class="icon" [src]="iconne[4]" alt="">
+          <img class="icon" style="width: 6rem;" [src]="iconne[4]" alt="">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-            Launch demo modal
+            En savoir +
           </button>
 
           <!-- Modal -->
@@ -316,7 +327,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Réservation</button>
                 </div>
               </div>
             </div>

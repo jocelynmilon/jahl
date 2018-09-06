@@ -12,6 +12,45 @@ image: any = ['/assets/trocadero.jpg', '/assets/disney.jpg', '/assets/opera.jpg'
   constructor() { }
 
   ngOnInit() {
+    $(document).ready(function () {
+      $('.card.deux').on('mouseover', function () {
+        $(this).animate({
+          opacity: '0.5',
+        });
+      });
+      $('.card.deux').on('mouseleave', function () {
+        $(this).animate({
+          opacity: '1',
+        });
+      });
+
+    });
+    $(document).ready(function () {
+      $('.card.trois').on('mouseover', function () {
+        $(this).animate({
+          opacity: '0.5',
+        });
+      });
+      $('.card.trois').on('mouseleave', function () {
+        $(this).animate({
+          opacity: '1',
+        });
+      });
+
+    });
+    $(document).ready(function () {
+      $('.card.one').on('mouseover', function () {
+        $(this).animate({
+          opacity: '0.5',
+        });
+      });
+      $('.card.one').on('mouseleave', function () {
+        $(this).animate({
+          opacity: '1',
+        });
+      });
+
+    });
   }
 
 }
